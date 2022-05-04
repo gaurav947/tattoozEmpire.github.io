@@ -1,0 +1,362 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Orelega One', cursive;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+  #loading {width: 100%;height: 100%;top: 0px;left: 0px;position: fixed;display: block; z-index: 99}
+
+#loading-image {position: absolute;top: 40%;left: 45%;z-index: 100} 
+
+
+.firstDiv{
+    position:relative
+}
+.NavBar{
+    margin-top:2%;
+    color:white;
+    position:absolute;
+    width: 100%;
+    text-align: right;
+    
+}
+
+.HomeImage{
+    height: 100vh;
+    width:100%;
+}
+
+
+
+.ulDiv{
+    margin-right: 4%;
+}
+
+.list{
+    text-decoration: none;
+    color:white;
+    display: inline;
+    letter-spacing: 2px;
+    margin:5px;
+}
+
+.list:hover{
+    color:grey;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 2px solid white;
+}
+
+
+
+
+@keyframes scroll {
+	0% {
+		transform: translateY(0);
+	}
+	30% {
+		transform: translateY(60px);
+	}
+}
+
+svg #wheel {
+	animation: scroll ease 2s infinite;
+}
+
+.svgDiv{
+    position:absolute;
+    bottom: 0;
+    width: 100% ;
+    align-items: center;
+    display: flex;
+    justify-content: center
+}
+
+.AboutDiv{
+    display:flex;
+    height:100vh;
+    width:100%;
+    position:relative;
+
+}
+
+.aboutHeader{
+    left:43%;
+    margin-top:9px;
+    letter-spacing: 10px;
+    position:absolute
+}
+
+.AboutDiv .AboutImgDiv{
+    margin: 7% 9.5%;
+    height: 70vh;
+    width:30%;
+}
+.AboutDiv .AboutImgDiv .AboutImg{
+    height: 70vh;
+    width:100%;   
+    border-radius: 20px;
+}
+
+.aboutDiv .v1{
+    position:absolute;
+    margin:5% 0;
+    border:1px solid rgb(0, 0, 0);
+    left:50%;
+    height:80vh
+}
+
+.AboutDiv .aboutP{
+    margin: 13% 9.5%;
+    height: 40vh;
+    width:30%;
+}
+
+.myWork{
+    height:100vh;
+    width:100%;
+    position: relative;
+    background-color: black;
+    display: flex;
+}
+
+.slideshow-container{
+    height:100vh;
+    /* border:2px solid red; */
+    position: relative;
+    width:50%;
+    margin: auto;
+}
+
+.prev, .next {
+    margin:0 20% 0 18%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+  /* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    font-size: 20px;
+    background-color: rgba(160, 41, 41, 0.8);
+}
+
+.numbertext {
+    color: white;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    margin-top:15%
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.workHeader{
+    left:43%;
+    color:white;
+    margin-top:9px;
+    letter-spacing: 10px;
+    position:absolute
+}
+
+.workImages{
+    color:white;
+    position:absolute;
+    margin:10% 45%
+}
+
+.myWork .slideshow-container .mySlides{
+    display:none;
+    margin: 14% 18%;
+    height: 70vh;
+    width:62%;
+    border:2px solid black
+}
+
+.myWork .slideshow-container .mySlides img{
+    vertical-align: middle;
+    height: 70vh;
+    width:100%;   
+    border-radius: 20px;
+}
+
+.videoSlideShow{
+    height:100vh;
+    position:relative;
+    /* border:2px solid rgb(165, 163, 163); */
+    width:50%;   
+}
+
+.myWork .videoSlideShow .mySlides1{
+    display:none;
+    margin: 14% 18%;
+    height: 70vh;
+    width:62%;
+    border:2px solid black
+}
+
+.myWork .videoSlideShow .mySlides1 video{
+    vertical-align: middle;
+    height: 70vh;
+    width:100%;   
+    border-radius: 20px;
+}
+
+.prevV, .nextV {
+    margin:0 20% 0 18%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Position the "next button" to the right */
+.nextV {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+  /* On hover, add a black background color with a little bit see-through */
+.prevV:hover, .nextV:hover {
+    font-size: 20px;
+    background-color: rgba(160, 41, 41, 0.8);
+}
+
+.numbertextV {
+    color: white;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    margin-top:15%
+}
+
+.fadeV {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+@keyframes fadeV {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.v2{
+    position:absolute;
+    margin:5% 0;
+    border:1px solid rgb(255, 250, 250);
+    left:50%;
+    height:80vh
+}
+
+
+.mapDiv{
+    height:100vh;
+    width:100%;
+}
+
+.mapHeader{
+    left:40%;
+    margin-top:9px;
+    letter-spacing: 10px;
+    position:absolute
+}
+
+.mapDiv .map{
+    margin:5%;
+    border-radius: 20px;
+    
+    height: 80vh;
+    width:90%
+}
+.contactUs{
+    height: 100vh;
+    width:100%;
+    background-color: black;
+    position: relative;
+    text-align: center
+}
+
+.contactHeader{
+    padding-top:1%;
+    margin-bottom: 1%;
+    color:white;
+    letter-spacing: 10px;
+}
+
+
+
+.contactUs .formDiv{
+    text-align:initial;
+    /* margin:2% 20% 0% 10%; */
+    /* display: inline-block; */
+    display: inline-block;
+    /* border:1px solid white; */
+    padding-top: 4%;
+    margin-top:5%;
+    height: 75vh;
+}
+
+.formDiv .inputClass{
+    border:none;
+    margin-top: 10px;
+    text-align: center;
+    width:100%;
+    outline: none;
+    padding:10px;
+    border-radius: 5px;
+}
+
+.formDiv .inputClass1{
+    margin-top:10px;
+    outline: none;
+    border-radius: 10px;
+}
+
+.formDiv .btn{
+    margin-top: 10px;
+    border-radius: 5px;
+    padding:10px;
+    font-weight: bold;
+    background-color:grey;
+    margin-left:40%
+}

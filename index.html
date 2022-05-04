@@ -1,0 +1,277 @@
+<html>
+    <head>
+        <title>Tattooz Empire</title>
+        <link rel="stylesheet" href="./style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    </head>
+    <body>
+        <!-- <div id="loading">
+            <img id="loading-image" src="images/loader.gif" alt="Loading..." />
+        </div> -->
+
+        <div id="loading">
+            <img id="loading-image" src="./images/loader.svg" alt="Loading..." />
+        </div>  
+
+        <div class="firstDiv">
+            <div class="NavBar">
+                <ul class="ulDiv">
+                    <a href='#about' class="list">About me</a>
+                    <a href="#myWork" class="list">My work</a>
+                    <a href="#mapDiv" class="list">My Location</a>
+                    <a href="#ContactUs" class="list">Contact Us</a>
+                </ul>
+            </div>
+            <div class="svgDiv">
+                <svg width="40px" height="10%" viewBox="0 0 247 390" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+                    <path id="wheel" d="M123.359,79.775l0,72.843" style="fill:none;stroke:#fff;stroke-width:20px;"/>
+                    <path id="mouse" d="M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z" style="fill:none;stroke:#fff;stroke-width:20px;"/>
+                </svg>
+            </div>
+            <img class="HomeImage" src="./images/home1.jpg"/>
+        </div>
+        <div id="about" class="AboutDiv">
+            <h1 class="aboutHeader">ABOUT ME</h1>
+            <div class="AboutImgDiv" >
+                <img class="AboutImg" src="./images/rohitAbout.jpg"/>
+            </div>
+            <div class="v1"></div>
+            <div class="aboutP">
+                <p>
+                    Tattooing is an art. As a tattooist, creativity is my toolbox, and innovation is my hammer.
+                    I’ve been in the industry for over 5 years and 
+                    have accumulated a wide range of talent and experience.
+                </p>
+            </div>
+        </div>
+        <div id="myWork" class="myWork">
+            <h1 class="workHeader">My work</h1>
+            <div class="slideshow-container">
+                <h4 class="workImages">Images</h4>
+                <div class="mySlides fade">
+                    <div class="numbertext">1/7</div>
+                    <img src="./images/slideShowImg/IMG-20220501-WA0010.jpg"/>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2/7</div>
+                    <img src="./images/slideShowImg/IMG-20220501-WA0001.jpg"/>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3/7</div>
+                    <img src="./images/slideShowImg/IMG-20220501-WA0015.jpg"/>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4/7</div>
+                    <img src="./images/slideShowImg/IMG-20220501-WA0013.jpg"/>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">5/7</div>
+                    <img src="./images/slideShowImg/IMG-20220501-WA0009.jpg"/>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">6/7</div>
+                    <img src="./images/slideShowImg/IMG-20220501-WA0030.jpg"/>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">7/7</div>
+                    <img src="./images/slideShowImg/IMG-20220501-WA0003.jpg"/>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)"><</a>
+                <a class="next" onclick="plusSlides(1)">></a>
+            </div>
+            <div class="v2"></div>
+            <div class="videoSlideShow">
+                <h4 class="workImages">Videos</h4>
+                <div class="mySlides1 fadeV">
+                    <div class="numbertextV">1/6</div>
+                    <video  muted controls >
+                        <source type="video/mp4" src="./images/slideShowVideo/VID-20220501-WA0035.mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <!-- <img src="./images/slideShowImg/IMG-20220501-WA0010.jpg"/> -->
+                </div>
+                <div class="mySlides1 fadeV">
+                    <div class="numbertextV">2/6</div>
+                    <video  autoplay muted controls >
+                        <source type="video/mp4" src="./images/slideShowVideo/VID-20220501-WA0021.mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <!-- <img src="./images/slideShowImg/IMG-20220501-WA0015.jpg"/> -->
+                </div>  
+                <div class="mySlides1 fadeV">
+                    <div class="numbertextV">3/6</div>
+                    <video  autoplay muted controls >
+                        <source type="video/mp4" src="./images/slideShowVideo/VID-20220501-WA0023.mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <!-- <img src="./images/slideShowImg/IMG-20220501-WA0015.jpg"/> -->
+                </div>
+
+                <div class="mySlides1 fadeV">
+                    <div class="numbertextV">4/6</div>
+                    <video  autoplay muted controls >
+                        <source type="video/mp4" src="./images/slideShowVideo/VID-20220501-WA0022.mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <!-- <img src="./images/slideShowImg/IMG-20220501-WA0015.jpg"/> -->
+                </div>  
+
+                <div class="mySlides1 fadeV">
+                    <div class="numbertextV">5/6</div>
+                    <video  autoplay muted controls >
+                        <source type="video/mp4" src="./images/slideShowVideo/VID-20220501-WA0019.mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <!-- <img src="./images/slideShowImg/IMG-20220501-WA0015.jpg"/> -->
+                </div>  
+
+                <div class="mySlides1 fadeV">
+                    <div class="numbertextV">6/6</div>
+                    <video  autoplay muted controls >
+                        <source type="video/mp4" src="./images/slideShowVideo/VID-20220501-WA0016.mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <!-- <img src="./images/slideShowImg/IMG-20220501-WA0015.jpg"/> -->
+                </div>
+                
+                <a class="prevV" onclick="plusSlidesV(-1)"><</a>
+                <a class="nextV" onclick="plusSlidesV(1)">></a>
+                
+            </div>
+        </div>
+        <div id="mapDiv" class="mapDiv"> 
+            <h1 class="mapHeader">My Location</h1>
+            <iframe class="map" alt="google Maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.998328606021!2d75.88974011463102!3d31.524205854107805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391afd9cf6724c83%3A0xc4cfb3a7b121de2c!2sTattooz%20Empire!5e0!3m2!1sen!2sin!4v1651420469003!5m2!1sen!2sin" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="ContactUs" class="contactUs">
+            <h1 class="contactHeader">Contact Us</h1>
+            <div class="formDiv" >
+                <input class="inputClass" id="thename" type="text" placeholder="Enter your name"/>
+                <br>
+                <input class="inputClass" id="themail" type="email" placeholder="Enter your email"/>
+                <br>
+                <textarea class="inputClass1" id="themsg" rows="10" cols="50" placeholder="Enter your Message Here!"></textarea>
+                <br>
+                <button class="btn" id="btn" onclick="sendEmail()">Submit</button>
+            </div>
+        </div>
+        <script>
+
+            window.onload = function(){ document.getElementById("loading").style.display = "none" }
+            
+            //for image slideshow
+            let slideIndex = 1;
+            let slideIndexV = 1;
+            showSlides(slideIndex);
+            showSlidesV(slideIndexV);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              
+              slides[slideIndex-1].style.display = "block";  
+            }
+
+            //for video slideshow
+            
+            
+            
+            function plusSlidesV(n) {
+              showSlidesV(slideIndexV += n);
+            }
+            
+            function currentSlideV(n) {
+              showSlidesV(slideIndexV = n);
+            }
+            
+            function showSlidesV(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides1");
+              if (n > slides.length) {slideIndexV = 1}    
+              if (n < 1) {slideIndexV = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              
+              slides[slideIndexV-1].style.display = "block";  
+            }
+
+            var videos = document.querySelectorAll('video');
+            console.log("videos=>",videos);
+            for(var i=0; i<videos.length; i++)
+                videos[i].addEventListener('play', function(){pauseAll(this)}, true);
+
+
+            function pauseAll(elem){
+                for(var i=0; i<videos.length; i++){
+                    //Is this the one we want to play?
+                    if(videos[i] == elem) continue;
+                    //Have we already played it && is it already paused?
+                    if(videos[i].played.length > 0 && !videos[i].paused){
+                    // Then pause it now
+                    videos[i].pause();
+                    }
+                }
+            }
+        </script>
+
+
+        <script>
+            function sendEmail() {
+                var click = document.querySelector('#btn');
+                click.addEventListener('click',()=>{
+                    document.getElementById("loading").style.display = "none"
+                })
+            var userid = "QQsnCs-dbPbheowHt";
+            emailjs.init(userid);
+            var thename = document.getElementById('thename').value;
+            var themail = document.getElementById('themail').value;
+            var themsg = document.getElementById('themsg').value;
+            var validmail = /^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
+            if (thename == "") {
+                alert("Please Enter Name");
+            }
+            else if (themail == "" || themail.match(!validmail)) {
+                alert("Please Enter Valid Email");
+            }
+
+            else if (themsg == "") {
+                alert("Please Enter Message");
+            }
+            else {
+                var contactdetail = {
+                from_name: thename,
+                to_name: themail,
+                message: themsg
+                };
+
+                emailjs.send('service_gxuhzvp', 'template_fndv87f', contactdetail).then(function (res) {
+                alert("Email Sent Successfully");
+                document.getElementById('thename').value = "";
+                document.getElementById('themail').value = "";
+                document.getElementById('themsg').value = ""
+                })
+                .catch((err)=>{
+                    alert("error occur",err);
+                });
+            }
+            }
+        </script>
+    </body>
+</html>
